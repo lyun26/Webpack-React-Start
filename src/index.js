@@ -1,8 +1,23 @@
-require('file-loader?name=[name].[ext]!./index.html');
+// require('file-loader?name=[name].[ext]!./index.html');
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { App } from './App';
+import * as ReactDOMClient from 'react-dom/client';
+import './index.css';
 
-const appElement = document.getElementById('app');
+class ImageDesigner {
+	constructor(selector, options = {}){
+        this.selector = selector;
+		this.node = document.querySelector(this.selector)	
+		this.init()
+	}
 
-ReactDOM.render(<App/>, appElement);
+	init(){
+        const root = ReactDOMClient.createRoot(this.node);
+		return root.render(
+			<h1 className='bg-neutral-300'>hello sdfafdff</h1>
+
+		)
+	}
+	
+}
+export { ImageDesigner }
