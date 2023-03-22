@@ -18,3 +18,8 @@ npm install tailwindcss autoprefixer postcss-cli mini-css-extract-plugin postcss
 npx tailwindcss init
 
 npm i style-loader -D
+
+## Should run script
+
+npm run dev
+npm run build
