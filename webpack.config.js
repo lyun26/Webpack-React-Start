@@ -1,7 +1,10 @@
+const webpack = require('webpack');
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
+	mode: 'development',
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'dist'),
@@ -53,9 +56,9 @@ module.exports = {
         ]
     },
     plugins: [
-		// new webpack.ProvidePlugin({
-		// 	process: 'process/browser',
-		// }),
+		new webpack.ProvidePlugin({
+			process: 'process/browser',
+		}),
 		new MiniCssExtractPlugin({
 			filename: 'image_designer.min.css',
 			ignoreOrder: false, 

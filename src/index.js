@@ -14,7 +14,7 @@ class ImageDesigner {
 	init(){
         const root = ReactDOMClient.createRoot(this.node);
 		return root.render(
-			<h1 className='bg-neutral-300'>hello sdfafdff</h1>
+			<h1 className='bg-neutral-300'>hello ffsdfaffddff</h1>
 
 		)
 	}
