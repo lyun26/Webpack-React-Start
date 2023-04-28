@@ -18,6 +18,9 @@
 
     npm install --save-dev babel-plugin-transform-imports
 
+    npm install --save-dev @babel/plugin-transform-modules-commonjs
+    npm install --save-dev @babel/plugin-transform-parameters
+
 ## Install Tailwind
 
     https://blog.logrocket.com/webpack-from-scratch-for-tailwind-css-with-react/
