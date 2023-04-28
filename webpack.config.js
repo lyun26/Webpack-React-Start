@@ -16,10 +16,14 @@ module.exports = {
         },
     },
     devServer: {
-        port: 3010,
+        port: 3030,
         liveReload: true,
     	static: path.join(__dirname, 'dist')
     },
+    optimization: {
+		// minimize: true,
+		minimizer: [new TerserPlugin()],
+	},
     module: {
         rules: [
             {
